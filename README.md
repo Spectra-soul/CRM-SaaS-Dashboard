@@ -6,8 +6,6 @@
 
 <h2>💡Technology used :</h2>
 
-Technologies used in the project:
-
 ▪️   HTML5
 ▪️   CSS3
 ▪️   JavaScript
