@@ -5,17 +5,19 @@
 🔗
 
 <h2>💡Technology used :</h2>
+
 ▪️  HTML5
 
 ▪️  CSS3
 
 ▪️  JavaScript
 
-▪️   HTML5
-▪️   CSS3
-▪️   JavaScript
+
 
 <h2>💡Features :</h2>
+
 ▪️ Responsive site
+
 ▪️ Searching functionality
+
 ▪️ Accordiong with data
