@@ -6,7 +6,9 @@
 
 <h2>💡Technology used :</h2>
 ▪️ HTML5
+
 ▪️ CSS3
+
 ▪️ JavaScript
 
 <h2>💡Features :</h2>
