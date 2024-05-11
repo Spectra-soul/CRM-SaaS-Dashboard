@@ -4,6 +4,8 @@
 
 🔗
 
+
+
 <h2>💡Technology used :</h2>
 
 ▪️  HTML5
@@ -20,4 +22,4 @@
 
 ▪️ Searching functionality
 
-▪️ Accordiong with data
+▪️ Filter data accordiong to features
