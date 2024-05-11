@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.2">
+    <title>InnovateHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
+    <script src="https://kit.fontawesome.com/ea8e1f032c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div style="display: flex;">
+        <img class="hamburger" src="./assets/hamburger.svg" alt="SideBar">
+    </div>
+    <div class="full-container"> 
+        <main class="main">
+            <!------------------Left Side Bar--------------->
+            <nav class="left-section">
+                <div class="sidebar">
+                    <div class="close">
+                        <img src="./assets/close.svg" alt="">
+                    </div>
+                    <!--Company Info-->
+                    <div class="top-sidebar">
+                        <div class="company-info">
+                            <img class="company-logo" src="./images/logo.png" alt="">
+                            <div class="company">
+                                <div class="company-type">INC</div>
+                                <div class="company-name">InnovateHub</div>
+                            </div>
+                        </div>
+                        <img class="user-logged" src="./images/userlogo.jpeg" alt="">
+                    </div>
+                    
+                    <!--Teams Info-->
+                    <div class="teams-sidebar">
+                        <div class="team-details">  <!--Design-->
+                            <div class="team-info">
+                                <i class="fa-solid fa-pen-nib fa-rotate-90"></i>
+                                <div class="team-name">Design Team</div>
+                            </div>
+                            <div class="team-count">
+                                <img src="./images/command-symbol.png" alt="" width="9px">+1
+                            </div>
+                        </div>
+                        <div class="team-details">  <!--Marketing-->
+                            <div class="team-info">
+                                <i class="fa-solid fa-bullhorn"></i>
+                                <div class="team-name">Marketing Team</div>
+                            </div>
+                            <div class="team-count">
+                                <img src="./images/command-symbol.png" alt="" width="9px">+2
+                            </div>
+                        </div>
+                        <div class="team-details">  <!--Developement-->
+                            <div class="team-info">
+                                <i class="fa-solid fa-code"></i>
+                                <div class="team-name">Development Team</div>
+                            </div>
+                            <div class="team-count">
+                                <img src="./images/command-symbol.png" alt="" width="9px" style="color: #898b8f">+3
+                            </div>
+                        </div>
+                        <div class="team-details">  <!--Create Team-->
+                            <div class="team-info" >
+                                <i class="fa-regular fa-square-plus" style="color: #75777c;"></i>
+                                <div class="team-name" style="color: #75777c;">Create a Team</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!--Folders Info-->
+                    <div class="folders-sidebar">
+                        <div class="add-folder">   
+                            <div class="folder-head">FOLDERS</div>
+                            <i class="fa-solid fa-plus" style="color: #75777c;"></i>
+                        </div>
+                        <!--Products-->
+                        <div class="folder-infos">  
+                            <div class="folder-details">  
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Products</div>
+                            </div> 
+                            <div class="folder-type">
+                                <i class="fa-solid fa-sort-down" id="expand-icon" style="color: #75777c; text-align: right; align-self:flex-end; justify-content: center;"></i>
+                            </div>
+                            <!-- Sub-folders -->
+                            <div class="subfolder" id="products-subfolders">
+                                <div class="folder-type">
+                                    <div class="folder-name">Roadmap</div>
+                                </div>
+                                <div class="folder-type">
+                                    <div class="folder-name">Feedback</div>
+                                </div>
+                                <div class="folder-type">
+                                    <div class="folder-name">Performance</div>
+                                </div>
+                                <div class="folder-type">
+                                    <div class="folder-name">Team</div>
+                                </div>
+                                <div class="folder-type">
+                                    <div class="folder-name">Analytics</div>
+                                </div>
+                                <div class="folder-type">
+                                    <i class="fa-regular fa-square-plus" style="color: #75777c;"></i>
+                                    <div class="folder-name" style="color: #75777c;">Add new tab</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Sales-->
+                        <div class="folder-infos">
+                            <div class="folder-details">  
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Sales </div>
+                            </div> 
+                            <div class="folder-type">
+                                <i class="fa-solid fa-sort-down" id="expand-icon" style="color: #75777c; text-align: right; align-self:flex-end;"></i>
+                            </div>
+                            <!--Sub Folders-->
+                            <div class="subfolder" id="products-subfolders">
+                                <div class="folder-type">
+                                    <div class="folder-name">Sales Folder 1</div>
+                                </div>
+                                <div class="folder-type">
+                                    <div class="folder-name">Sales Folder 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Design-->
+                        <div class="folder-infos">
+                            <div class="folder-details">  
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Design </div>
+                            </div> 
+                            <div class="folder-type">
+                                <i class="fa-solid fa-sort-down" id="expand-icon" style="color: #75777c; text-align: right; align-self:flex-end;"></i>
+                            </div>
+                            <!--Sub Folders-->
+                            <div class="subfolder" id="products-subfolders">
+                                <div class="folder-type">
+                                    <div class="folder-name">Design Folder 1</div>
+                                </div>
+                                <div class="folder-type">
+                                    <div class="folder-name">Design Folder 2</div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Office-->
+                        <div class="folder-infos">
+                            <div class="folder-details">  
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Office</div>
+                            </div> 
+                        </div>
+                        <!--Legal-->
+                        <div class="folder-infos">
+                            <div class="folder-details">
+                                <i class="fa-regular fa-folder"></i>
+                                <div class="folder-name">Legal </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sidebar Bottom -->
+                    <div class="sidebar-bottom">
+                        <div class="bottom-items">
+                            <div class="bottom-allover">
+                                <i class="fa-solid fa-user-plus"></i>
+                                Invite teammates
+                            </div>
+                        </div>
+                        <div class="bottom-items">
+                            <div class="bottom-allover">
+                                <i class="fa-regular fa-circle-question"></i>
+                                Help and first steps
+                            </div>
+                            <div class="help-count">0/6</div>
+                        </div>
+                        <div class="trial-bill">
+                            <div class="bottom-allover">
+                                <div class="seven">7</div>days left on trial
+                            </div>
+                            <button class="add-billing">Add billing</button>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <!------------------Right Side------------------>
+            <div class="right-section">
+                <div class="right-bar">
+                    <!--- Heading-Products --->
+                    <header>
+                        <div class="right-header">
+                            <h3>Products</h3>
+                            <div class="Search-box">
+                                <form class="Search-tab" id="searchForm">
+                                    <i class="fa fa-search"></i>
+                                    <input type="search" id="searchInput" required class="search" placeholder="Search for...">
+                                </form>
+                                <div>
+                                    <i class="fa-regular fa-comments chat"></i>
+                                    <i class="fa fa-gear setting"></i>
+                                </div>
+                            </div>
+                    </header>
+    
+                    <!--- Category List --->
+                    <div class="main-section">
+                        <div class="filtering-Items">
+                            <div class="leftside-Items">
+                                <div>
+                                    <button style="width: fit-content;">
+                                        <i class="fa-solid fa-border-all"></i> 
+                                        <select id="selectBrand">
+                                                <option value="All Brands">All Brands</option>
+                                                <option value="Wix">Wix</option>
+                                                <option value="Shopify">Shopify</option>
+                                                <option value="Paypal">Paypal</option>
+                                                <option value="Disney">Disney</option>
+                                                <option value="Intercom">Intercom</option>
+                                                <option value="Google">Google</option>
+                                                <option value="Evernote">Evernote</option>
+                                                <option value="Microsoft">Microsoft</option>
+                                                <option value="Invision">Invision</option>
+                                        </select>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+                                </div>
+                                <div>
+                                    <button>
+                                        <select>
+                                            <option value="newest">Desk</option>
+                                            <option value="newest">Option1</option>
+                                            <option value="price-low">Option2</option>
+                                        </select>
+                                        <i class="fa-solid fa-caret-down"></i>
+                                    </button>
+                                </div>
+                                <div><button>Tags <i class="fa-solid fa-caret-down"></i></button></div>
+                                <div>
+                                    <button id="sortButton">
+                                        <i class="fa-solid fa-arrow-down-wide-short"></i>
+                                        <select>
+                                            <option value="newest">Sort</option>
+                                            <option value="newest">Newest</option>
+                                            <option value="newest">Oldest</option>
+                                            <option value="meet-time">Meeting Time</option>
+                                        </select>
+                                    </button>
+                                </div>
+                                <div><button><i class="fa-solid fa-filter"></i> Filter</button></div>
+                            </div>
+                            <div class="rightside-Items">
+                                <div><button><i class="fa-solid fa-video"></i> Meeting</button></div>
+                                <div><button><i class="fa-solid fa-file-import"></i> Import/Export</button></div>
+                            </div>
+                        </div>
+                        <!--Table Data-->
+                        <div class="tableData">
+                            <table id="dataTable">
+                                <thead>     <!--Table Header-->
+                                    <tr>
+                                        <th>Brand</th>
+                                        <th class="disc-head">Description</th>
+                                        <th class="Member">Member</th>
+                                        <th>Category</th>
+                                        <th class="Head-tag">Tags</th>
+                                        <th>Next Meeting</th>
+                                        <th class="plus">+</th>
+                                    </tr>
+                                </thead>
+                                <tbody>     <!--Table Body-->
+                                    <!-- Brand-Wix -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/wix.png" alt="wix" class="brand-logo">
+                                            <p class="brand-Name">Wix</p>
+                                            <div class="chat-img">
+                                                <i class="fa-regular fa-comments"></i>
+                                                <p>2</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-Desc">Develop a personalized fitness program.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user2.jpeg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user9.jpg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user4.webp" alt="User3">
+                                            <img class="user4 userImg" src="images/users/user1.jpeg" alt="User4">
+                                            <img class="user5 userImg" src="images/users/user5.jpeg" alt="User5">
+                                        </td>
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #ba05b7; background-color: #e569fb5d;" id="Automation">Automation</p>
+                                        </td>
+                                        <td id="tag-head" class="Head-tag">
+                                            <p class="tag">#DigitalTranformation</p>
+                                            <p class="tag">#Technology</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #4fee2b3f;" id="today">in 30 minutes</p></td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Shopify -->                                
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/shopify.webp" alt="wix" class="brand-logo">
+                                            <p class="brand-Name">Shopify</p>
+                                        </td>
+                                        <td class="table-Desc">Introduce a cloud-based platform for accessibility.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user6.jpeg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user2.jpeg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user8.jpeg" alt="User3">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #cf062b; background-color: #f6dde2;" id="E-commerse">E-commerce</p>
+                                            <p class="table-category" style="color: #d68008; background-color: #f6faba;" id="Publising">B2B</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#OnlineShopping</p>
+                                            <p class="tag">#DigitalCommerce</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #2be4ee3f;" id="tommorow">Tommorrow</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Mailchimp -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/mailChirmp.webp" alt="wix" class="brand-logo">
+                                            <p class="brand-Name">Mailchimp</p>
+                                        </td>
+                                        <td class="table-Desc">Develop a mobile app aimed at enhancing user experience.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user7.jpg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user9.jpg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user14.png" style="background-color: #f4a7cddd;" alt="User3">
+                                            <img class="user4 userImg" src="images/users/user13.jpeg" alt="User4">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #05610dfe; background-color: #bef5c3;" id="Automation">SAAS</p>
+                                            <p class="table-category" style="color: #d68008; background-color: #f6faba;" id="Automation">SAAS</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#TechInnovation</p>
+                                            <p class="tag">#CloudComputing</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #2be4ee3f;" id="tommorow">Tommorow</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Paypal -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/PayPal_logo.png" alt="wix" class="brand-logo">
+                                            <p class="brand-Name">PayPal</p>
+                                            <div class="chat-img">
+                                                <i class="fa-regular fa-comments"></i>
+                                                <p>7</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-Desc">This program could include various features for comprehensive functionality.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user3.jpeg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user16.jpeg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user11.webp" style="background-color: #f5360778;" alt="User3">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #05610dfe; background-color: #bef5c3;" id="Marketplace">Marketplace</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#BuySellOnline</p>
+                                            <p class="tag">#OnlineMarketplace</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #4fee2b3f;" id="today">in 6 hours</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Disney -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/Disney.webp" alt="Disney" class="brand-logo">
+                                            <p class="brand-Name">Disney</p>
+                                            <div class="chat-img">
+                                                <i class="fa-regular fa-comments"></i>
+                                                <p>7</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-Desc">Introduce a B2B solution for enterprise applications.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user12.webp" style="background-color: #ec930d;"alt="User1">
+                                            <img class="user2 userImg" src="images/users/user10.webp" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user3.jpeg" alt="User3">
+                                            <img class="user4 userImg" src="images/users/user15.jpeg" alt="User4">
+                                            <img class="user5 userImg" src="images/users/user13.jpeg" alt="User5">
+                                            <img class="user6 userImg" src="images/users/user5.jpeg" alt="User6">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #642e05; background-color: #fb87024c;" id="b2b">B2B</p>
+                                            <p class="table-category" style="color: #d68008; background-color: #f6faba;" id="b2c">B2C</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#BusinessPartnerships</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #ee2b5c30;" id="canceled">No Contact</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Intercom -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/intercom.png" alt="Intercom" class="brand-logo">
+                                            <p class="brand-Name">Intercom</p>
+                                            <div class="chat-img">
+                                                <i class="fa-regular fa-comments"></i>
+                                                <p>9</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-Desc">Implement AI-driven capabilities for enhanced performance.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user4.webp" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user5.jpeg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user7.jpg" alt="User3">
+                                            <img class="user4 userImg" src="images/users/user1.jpeg" alt="User4">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #085db8; background-color: #badbfa6c;" id="b2b">Technology</p>
+                                            <p class="table-category" style="color: #05610dfe; background-color: #bef5c3;" id="b2c">SAAS</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#SmartFinance</p>
+                                            <p class="tag">#SaaSPI</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #4fee2b3f;" id="today">in 1 Hour</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Google -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/google_PNG3.webp" alt="google" class="brand-logo">
+                                            <p class="brand-Name">Google</p>
+                                            <div class="chat-img">
+                                                <i class="fa-regular fa-comments"></i>
+                                                <p>5</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-Desc">Offer a comprehensive cybersecurity solution for data protection.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user8.jpeg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user6.jpeg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user4.webp" alt="User3">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #d68008; background-color: #f6faba;" id="Finence">Finance</p>
+                                            <p class="table-category" style="color: #ba05b7; background-color: #e569fb5d;" id="Automation">Automation</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#SmarthFinance</p>
+                                            <p class="tag">#WorkforceEfficiency</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #4fee2b3f;" id="today">in 30 minutes</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!--  Brand-Evernote -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/evernote.png" alt="Evernote" class="brand-logo">
+                                            <p class="brand-Name">Evernote</p>
+                                        </td>
+                                        <td class="table-Desc">This could include smart living features for added convenience.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user7.jpg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user3.jpeg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user9.jpg" alt="User3">
+                                            <img class="user4 userImg" src="images/users/user14.png" style="background-color: #f790be;" alt="User4">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #d68008; background-color: #f6faba;" id="b2b">Transportation</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#LogisticsTech</p>
+                                            <p class="tag">#UX</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #4f4f4f1c;" id="today">Next month</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Microsoft -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/Microsoft_icon.svg.webp" alt="Microsoft" class="brand-logo">
+                                            <p class="brand-Name">Microsoft</p>
+                                            <div class="chat-img">
+                                                <i class="fa-regular fa-comments"></i>
+                                                <p>14</p>
+                                            </div>
+                                        </td>
+                                        <td class="table-Desc">Launch an advisory service for personalized assistance.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user1.jpeg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user4.webp" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user9.jpg" alt="User3">
+                                            <img class="user4 userImg" src="images/users/user12.webp" style="background-color: #d1e40591;" alt="User4">
+                                            <img class="user5 userImg" src="images/users/user16.jpeg" alt="User5">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #cf062b; background-color: #f6dde2;" id="Publising">Publising</p>
+                                            <p class="table-category" style="color: #d68008; background-color: #f6faba;" id="b2c">B2C</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#B2CMarketing</p>
+                                            <p class="tag">#RetailTech</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #ee2b5c30;" id="canceled">No Contact</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- Brand-Ivision -->
+                                    <tr>
+                                        <td class="brand">
+                                            <input type="checkbox" name="" id="" onchange="highlightRow(this)">
+                                            <img src="images/brands/invision.svg" alt="Invision" class="brand-logo">
+                                            <p class="brand-Name">Invision</p>
+                                        </td>
+                                        <td class="table-Desc">The tool would analyze trends for informed decision-making.</td>
+                                        <td class="user-Img-Container">
+                                            <img class="user1 userImg" src="images/users/user1.jpeg" alt="User1">
+                                            <img class="user2 userImg" src="images/users/user6.jpeg" alt="User2">
+                                            <img class="user3 userImg" src="images/users/user3.jpeg" alt="User3">
+                                        </td>
+                                        <td class="table-category-head">
+                                            <p class="table-category" style="color: #085db8; background-color: #badbfa6c;" id="b2b">Web Services</p>
+                                        </td>
+                                        <td id="tag-head">
+                                            <p class="tag">#APIIntegration</p>
+                                        </td>
+                                        <td>
+                                            <p class="meet-time" style="background-color: #4f4f4f1c;" id="today">Next month</p>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+    
+                                    <!-- New Brand Rows-->
+                                    <tr style="color: #75777c;">
+                                        <td style="bottom: 0;"><i style=" color: #000000;">10</i> count</td>
+                                        <td ><i class="fa-solid fa-plus" ></i>Add calcualtion</td>
+                                        <td ><i class="fa-solid fa-plus" ></i>Add calcualtion</td>
+                                        <td ><i class="fa-solid fa-plus" ></i>Add calcualtion</td>
+                                        <td ><i class="fa-solid fa-plus" ></i>Add calcualtion</td>
+                                        <td></td>
+                                        <td></td>
+                                    </tr>
+    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--- Footer Tool bar --->
+                    <div class="footer-section">
+                        <footer class="footer-button">
+                            <button><i class="fa-regular fa-square-check"></i> Selected</button>
+                            <button><i class="fa-solid fa-box-archive"></i> Archive</button>
+                            <button id="Delete"><i class="fa-solid fa-trash"></i> Delete</button>
+                            <button>More <i class="fa-solid fa-caret-down"></i></button>
+                            <button style="border-style: hidden;"><i class="fa-solid fa-xmark" style="color: #b8babe; border-radius: 0%;"></i></button>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
